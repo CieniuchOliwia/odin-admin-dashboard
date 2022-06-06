@@ -1,0 +1,21 @@
+#containerForAll{
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+    grid-template-columns: repeat(4,1fr);
+}
+
+.sidebar{
+grid-area: 1 / 1 / 7 / 1;
+background-color:#84a59d;
+color:white;
+}
+
+.header{
+    grid-area: 1 / 2 / 1 / 5;
+    background-color: #F7EDE2;
+}
+
+.mainContent{
+    grid-area: 2 / 2 / 7 / 5;
+    background-color: #F5CAC3;
+}
