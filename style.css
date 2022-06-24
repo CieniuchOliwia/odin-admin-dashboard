@@ -1,7 +1,7 @@
 #container-for-all{
     display: grid;
-    grid-template-rows: repeat(8,200px);
-    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(8,1fr);
+    grid-template-columns: repeat(6,1fr);
 }
 
 .sidebar{
@@ -11,28 +11,45 @@ color:white;
 }
 
 .header{
-    grid-area: 1/2/1/5;
-    background-color: #F7EDE2;
+    grid-area: 1/2/1/7;
+    background-color: white;
 }
 
 .mainContent{
-    grid-area: 2 / 2 / 9 / 5;
-    background-color: #F5CAC3;
+    grid-area: 2 / 2 / 9 / 7;
+    background-color:  #F7EDE2;;
 }
 
 .mainContent{
     display:grid;
-    grid-template-rows: repeat(4,1fr);
+    grid-template-rows: 1fr;
     grid-template-columns: repeat(4,1fr);
 }
 
 .projects{
-    grid-area: 1 / 1 / 4 / 4;
+    grid-area: 1 / 1 / 2/ 4;
+    margin: 15px;
+}
+
+.right-side{
+    border: 1px solid black;
+    grid-area: 1/4/2/5;
+   
+    margin: 15px;
 }
 
 .projects-content{
     display:grid;
     grid-template-rows: repeat(3,1fr);
     grid-template-columns: repeat(2,1fr) ;
+    gap:15px;
+    
+}
+
+.projects-content > div{
+    background-color:white;
+    padding: 15px;
+    border-left: 5px solid #f28482;    
+
 }
 
