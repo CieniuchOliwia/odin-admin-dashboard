@@ -17,13 +17,11 @@ color:white;
 
 .mainContent{
     grid-area: 2 / 2 / 9 / 7;
-    background-color:  #F7EDE2;;
-}
-
-.mainContent{
+    background-color:  #F7EDE2;
     display:grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(4,1fr);
+    border-top: 5px solid  #f4e4d2;
 }
 
 .projects{
@@ -54,9 +52,82 @@ color:white;
 .announcements, .trending{
  background-color: white;
  font-size: 12px;
+ padding: 20px;
 }
 
 .ann-paragraph{
     height: 70px;
     overflow: auto;
+    margin-top: 0px;
+    margin-bottom: 25px;
+
+    
+}
+
+.announcements h4 {
+    margin-bottom: 2px;
+    margin-top:2px;
+}
+
+#updated-prv-policy-paragraph{
+    margin-bottom:2px;
+}
+
+#profile-picture{
+    border:2px solid #f28482;
+    border-radius: 50%;
+}
+
+button{
+    background-color: #84a59d;
+    color: white;
+    border-color: #84a59d ;
+    border-radius: 5px;
+    width:70px;
+    height: 25px;
+}
+
+
+.header-first-row{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 20fr 1fr 1fr 3fr;
+    align-items: center;
+}
+
+.header-second-row{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 12fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.header{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#search-icon{
+   justify-self: center;
+}
+
+#greeting-first-row{
+ font-size: 12px;
+ font-weight: 700;
+}
+
+#greeting-second-row{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.header-first-row>div{
+    font-weight: 700;
+}
+
+input{
+    background-color: #f5cac3;
+    border:none;
+    border-radius: 5px;
+    height: 25px;
 }
